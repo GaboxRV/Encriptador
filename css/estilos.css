@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Victor Mono', monospace;
+}
+
+/* Responsividad para celulares  */
+
+@media screen and (max-width: 768px) {
+    body{
+        height: auto;
+        min-height: 100vh;
+    }
+}

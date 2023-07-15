@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge encriptador</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="header__logo" src="./imagenes/alura.png" alt="logo de alura"/>
+        <h1 class="header__titulo">Encriptador</h1>
+    </header>
+
+
+    <main class="main">
+
+        <section class="entrada">
+
+            <textarea id="entrada_texto" class="entrada__textarea"  spellcheck="false" placeholder="Ingrese el texto aqui" rows="5" cols="50"></textarea>
+            <p class="entrada__advertencia"> &#33; Solo letras minúsculas y sin acentos</p>
+
+            <div class="entrada__botones">
+
+                <input id="boton_encriptar" class="entrada__botones__boton--encriptar boton" type="button" value="Encriptar">
+                <input id="boton_desencriptar" class="entrada__botones__boton--desencriptar boton" type="button" value="Desencriptar">
+                <input id="boton_borrar" class="entrada__botones__boton--borrar boton" type="button" value="Borrar">
+
+            </div>
+
+        </section>
+
+        <section class="salida">
+
+            <div class="salida__estado--esperando" id="esperando">
+                <img class="salida__estado--esperando__imagen" src="./imagenes/gato.jpg">
+                <h3 class="salida__estado--esperando__subtitulo">Ningún mensaje fue encontrado</h3>
+                <p class="salida__estado--esperando__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            </div>
+
+
+            <div class="salida__estado--ejecutando no_mostrar" id="ejecutando">
+                <textarea id="salida_texto" class="salida__estado--ejecutando__textarea" name="salida" rows="5" cols="50" readonly></textarea>
+
+                <input id="boton_copiar" class="salida__estado--ejecutando__boton--copiar boton" class="boton" type="button" value="Copiar">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="enlaces">
+            <a class="enlaces__enlace" href="https://github.com/GaboxRV" target="_blank">
+                <img class="enlaces__enlace__imagen" src="./imagenes/github.png" alt="github"/>
+            </a>
+    
+            <a class="enlaces__enlace" href="https://app.aluracursos.com/user/GaboxRV" target="_blank">
+                <img class="enlaces__enlace__imagen" src="./imagenes/alura.png" alt="alura"/>
+            </a>
+    
+            <a class="enlaces__enlace" href="https://www.linkedin.com/in/gabriel-rv/" target="_blank">
+                <img class="enlaces__enlace__imagen" src="./imagenes/linkedin.png" alt="linkedin"/>
+            </a>
+        </div>
+        
+        <p class="footer__nombre">Carlos Gabriel Ramirez Victoria</p>
+
+    </footer>
+
+
+
+    <script src="./app.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.header{
+    background: #D7C0AE;
+    height: 10%;
+    flex-grow: 0;
+    
+
+    /* Posicionamiento */
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 50px;
+
+}
+
+.header__titulo{
+    font-size: 30px;
+}
+
+/* Responsividad para celulares  */
+
+@media screen and (max-width: 768px) {
+    .header{
+        height: 100px;
+    }
+    
+}

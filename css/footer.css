@@ -1,0 +1,34 @@
+.footer{
+    background: #D7C0AE;
+    height: 10%;
+    flex-grow: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlaces{
+    padding: 10px;
+    width: 300px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.enlaces__enlace__imagen{
+    max-height: 40px;
+}
+
+
+/* Responsividad para celulares  */
+
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 100px;
+    }
+    
+}
